@@ -1,0 +1,16 @@
+<div class="button-container" style="display: inline-flex;">
+    <button (click)="incrementCounter()">Increment Counter by 1</button>
+    <button (click)="decremenetCounter()">Decrement Counter by 1</button>
+    <button (click)="toggleHome()">Hide Homepage</button>
+</div>
+<div *ngIf="showHomePage" class="homepage-container">
+    <homepage-component [counter]="appCounter"></homepage-component>
+</div>
+<div class="list-container">
+  <div *ngFor="let number of numberList" class="list-item">
+    <homepage-component [counter]="number"></homepage-component>
+  </div>
+</div>
+
+
+<!-- ngif and ngfor -->
