@@ -2,14 +2,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { HomepageComponent } from './homepage/homepage.component';
-import { UserLoginComponent } from './user-login/user-login.component';
+import { HomepageComponent } from './components/homepage/homepage.component';
+import { NewUserComponent } from './components/new-user/new-user.component';
+import { ReturningUserComponent } from './components/returning-user/returning-user.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
-    UserLoginComponent
+    NewUserComponent,
+    ReturningUserComponent,
+    
   ],
   imports: [
     BrowserModule
