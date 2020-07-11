@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, OnDestroy } from '@angular/core';
 import { Router } from '@angular/router';
+import { Where2GoUser} from '../../constants/user.model';
 
 @Component({
   selector: 'homepage-component',
@@ -7,17 +8,23 @@ import { Router } from '@angular/router';
   styleUrls: ['./homepage.component.scss']
 })
 export class HomepageComponent implements OnInit, OnDestroy {
-  @Input() counter: number;
-
-
+  currUserName: string;
+  currUserId: string;
+  
   constructor(private _router: Router) { }
 
   ngOnInit(): void {
-    console.log('Home page init');
   }
 
   ngOnDestroy() {
-    console.log('');
+  }
+
+  onSubmit() {
+    const user: Where2GoUser = {
+      name: this.currUserName,
+      locationPreferences: []
+    };
+    console.log(user);
   }
 
   // here's the function for navigating between pages; call this function to navigate
