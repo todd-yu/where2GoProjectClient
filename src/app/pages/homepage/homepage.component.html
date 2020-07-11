@@ -1,8 +1,14 @@
 <p>hello!</p>
-<h1>Number: {{ counter }}</h1>
 <!-- <user-login></user-login> -->
-<!-- feel free to delete this butto nwhen ready -->
+<!-- feel free to delete this button when ready -->
 <button (click)="navigate('new-user')">Navigate New User</button>
+
+<div class="input-container" style="display: flex; flex-direction: column;">
+    <input [(ngModel)]="currUserName" type="text" placeholder="Name">
+    <input type="currUserId" placeholder="Invite Code">
+    <p>Current User name: {{ currUserName }}</p>
+    <button (click)="onSubmit()">Submit</button>
+</div>
 
 <!-- Here's the router outlet for displaying pages; this "router-outlet" component will be replaced with the routed page-->
 <router-outlet></router-outlet>
