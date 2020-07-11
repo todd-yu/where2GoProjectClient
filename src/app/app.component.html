@@ -2,14 +2,18 @@
     <button (click)="incrementCounter()">Increment Counter by 1</button>
     <button (click)="decremenetCounter()">Decrement Counter by 1</button>
     <button (click)="toggleHome()">Hide Homepage</button>
+    <button (click)="toggleNew()">New User</button>
 </div>
 <div *ngIf="showHomePage" class="homepage-container">
-    <homepage ></homepage>
+    <homepage></homepage>
 </div>
 <div class="list-container">
   <div *ngFor="let number of numberList" class="list-item">
-    <homepage ></homepage>
+    <!-- <homepage></homepage> -->
   </div>
+</div>
+<div *ngIf="showNewUser" class="new-user-container">
+  <new-user></new-user>
 </div>
 
 
