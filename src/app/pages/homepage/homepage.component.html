@@ -1,3 +1,8 @@
 <p>hello!</p>
 <h1>Number: {{ counter }}</h1>
-<user-login></user-login>
+<!-- <user-login></user-login> -->
+<!-- feel free to delete this butto nwhen ready -->
+<button (click)="navigate('new-user')">Navigate New User</button>
+
+<!-- Here's the router outlet for displaying pages; this "router-outlet" component will be replaced with the routed page-->
+<router-outlet></router-outlet>
