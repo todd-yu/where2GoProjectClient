@@ -35,4 +35,8 @@ export class HomepageComponent implements OnInit, OnDestroy {
     this._router.navigate(['home', route]);
   }
 
+  mainGroup() {
+    this._router.navigate(['home', 'returning-user']);
+  }
+
 }

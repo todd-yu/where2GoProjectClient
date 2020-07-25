@@ -1,3 +1,4 @@
 <div class="user-container">
-    <div *ngFor="let user of users" class="user"></div>
+    <div *ngFor="let user of users; index as i" class="user">Name: {{ user.uses }} index: {{ i }}</div>
+    
 </div>

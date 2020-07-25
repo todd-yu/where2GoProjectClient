@@ -14,7 +14,7 @@ import { HomepageComponent } from './pages/homepage/homepage.component';
 import { NewUserPageComponent } from './pages/new-user-page/new-user-page.component';
 
 const ROUTES: Routes = [
-    { 
+    {
       path: 'home', loadChildren: './pages/homepage/homepage.module#HomePageModule',
     },
     { path: '', redirectTo: 'home', pathMatch: 'full'},
