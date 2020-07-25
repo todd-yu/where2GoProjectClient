@@ -2,18 +2,28 @@
     <button (click)="incrementCounter()">Increment Counter by 1</button>
     <button (click)="decremenetCounter()">Decrement Counter by 1</button>
     <button (click)="toggleHome()">Hide Homepage</button>
+    <button (click)="toggleNew()">New User</button>
 </div>
 <div *ngIf="showHomePage" class="homepage-container">
-    <homepage ></homepage>
+    <homepage></homepage>
 </div>
 <div class="list-container">
   <div *ngFor="let number of numberList" class="list-item">
-    <homepage ></homepage>
-  </div>
+    <homepage></homepage> -->
+  
+
+<!-- <div *ngIf="showNewUser" class="new-user-container">
+  <new-user></new-user>
 </div> -->
 
 <!-- MAIN ROUTER for homepage-->
+
+
 <router-outlet></router-outlet>
+
+
+<!-- temporary: Haven't figured out routing yet ): -->
+
 
 
 <!-- ngif and ngfor -->

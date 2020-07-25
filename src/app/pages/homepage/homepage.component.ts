@@ -22,6 +22,7 @@ export class HomepageComponent implements OnInit, OnDestroy {
   onSubmit() {
     const user: Where2GoUser = {
       name: this.currUserName,
+      id: this.currUserId,
       locationPreferences: []
     };
     console.log(user);
@@ -33,7 +34,15 @@ export class HomepageComponent implements OnInit, OnDestroy {
     // the "router outlet" component will become the new-user page
     // routing information is contained in homepage.module.ts
     this._router.navigate(['home', route]);
-  }
+    }
+
+  // newUser(){
+  //   this.navigate('new-user');
+  //   }
+
+  // returningUser(){
+  //   this.navigate('returning-user')
+  // }
 
   mainGroup() {
     this._router.navigate(['home', 'returning-user']);
