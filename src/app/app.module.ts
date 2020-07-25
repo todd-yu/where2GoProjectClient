@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { FormsModule } from "@angular/forms";
+import { ButtonModule } from '@progress/kendo-angular-buttons';
 
 import { AppComponent } from './app.component';
 import { UserInputPageComponent } from './pages/user-input-page/user-input-page.component';
@@ -12,11 +13,19 @@ import { ErrorPageComponent } from './pages/error-page/error-page.component';
 import { HomePageModule } from './pages/homepage/homepage.module';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { NewUserPageComponent } from './pages/new-user-page/new-user-page.component';
+import { InputsModule } from '@progress/kendo-angular-inputs';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LoginPageComponent } from './pages/login-page/login-page.component';
+import { PopupModule } from '@progress/kendo-angular-popup';
+
+
+
 
 const ROUTES: Routes = [
-    { 
-      path: 'home', loadChildren: './pages/homepage/homepage.module#HomePageModule',
-    },
+    { path: 'home', component: HomepageComponent },
+    { path: 'new-user', component: NewUserPageComponent },
+    { path: 'returning-user', component: MainGroupPageComponent },
+    { path: 'login', component: LoginPageComponent},
     { path: '', redirectTo: 'home', pathMatch: 'full'},
     { path: '**', component: ErrorPageComponent }
 ];
@@ -30,12 +39,17 @@ const ROUTES: Routes = [
     ReturningUserComponent,
     ErrorPageComponent,
     NewUserPageComponent,
+    LoginPageComponent,
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(ROUTES),
     FormsModule,
-    HomePageModule
+    HomePageModule,
+    InputsModule,
+    BrowserAnimationsModule,
+    PopupModule,
+    ButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
