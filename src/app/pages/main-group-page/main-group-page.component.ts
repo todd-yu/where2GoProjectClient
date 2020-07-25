@@ -20,6 +20,6 @@ export class MainGroupPageComponent implements OnInit {
     console.log(this.sampleData);
   }
 
-  
+
 
 }

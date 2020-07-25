@@ -18,14 +18,18 @@
 
 <!-- MAIN ROUTER for homepage-->
 
+<!-- use RouterLink inside elements or a navigate function to access routes; all routes are absolute 
+ e.g. navigating to 'login' will take you to '~/login' -->
+
 <div class="app-container">
   <div class="app-content-container">
     <nav class="top-nav-bar">
-      <div class="logo">Where2Meet</div>
+      <div class="logo">Where2Go</div>
       <button kendoButton [look]="'outline'" [routerLink]="['/login']" routerLinkActive="router-link-active" class="nav-button">Sign In</button>
       <button kendoButton [look]="'outline'" [routerLink]="['/home']" routerLinkActive="router-link-active" class="nav-button" >Home</button>
       <button kendoButton [look]="'outline'" [routerLink]="['/returning-user']" routerLinkActive="router-link-active" class="nav-button" >Returning User</button>
       <!-- <div [routerLink]="['/login']" routerLinkActive="router-link-active"  class="sign-in">Sign In</div> -->
+      
     </nav>
     <router-outlet></router-outlet>
   </div>

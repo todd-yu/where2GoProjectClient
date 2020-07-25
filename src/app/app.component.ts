@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,11 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'testProject';
+
+  title = 'Where2Go';
   appCounter: number = 0;
   showHomePage: boolean = true;
   numberList: Array<number> = [1, 2, 3, 4, 5];
-  showNewUser: boolean = false; 
+  showNewUser: boolean = false;
+  
 
   ngOnInit() {
   }
