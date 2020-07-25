@@ -32,8 +32,11 @@ export class HomepageComponent implements OnInit, OnDestroy {
   navigate(route) {
     // if route is 'new-user', e.g. this.navigate('new-user'),
     // the "router outlet" component will become the new-user page
-    // routing information is contained in homepage.module.ts
-    this._router.navigate(['home', route]);
+
+    // IMPORTANT
+    // routing information is contained in app.module.ts, NOT homepage.module.ts
+
+    this._router.navigate([route]);
     }
 
   // newUser(){
@@ -45,7 +48,7 @@ export class HomepageComponent implements OnInit, OnDestroy {
   // }
 
   mainGroup() {
-    this._router.navigate(['home', 'returning-user']);
+    this._router.navigate(['returning-user']);
   }
 
 }
