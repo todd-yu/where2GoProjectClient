@@ -1,6 +1,6 @@
 export class Where2GoUser {
     name: string;
-    id?: string;
+    id: string;
     locationPreferences: Array<Location>;
     
 }

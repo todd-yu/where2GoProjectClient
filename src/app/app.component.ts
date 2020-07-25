@@ -10,6 +10,7 @@ export class AppComponent implements OnInit {
   appCounter: number = 0;
   showHomePage: boolean = true;
   numberList: Array<number> = [1, 2, 3, 4, 5];
+  showNewUser: boolean = false;
 
   ngOnInit() {
     console.log("app initialized");
@@ -30,5 +31,10 @@ export class AppComponent implements OnInit {
 
   toggleHome() {
     this.showHomePage = !this.showHomePage;
+  }
+
+  toggleNew(){
+    this.showNewUser= !this.showNewUser;
+    console.log(this.showNewUser);
   }
 }

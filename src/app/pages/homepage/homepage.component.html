@@ -1,14 +1,27 @@
-<p>hello!</p>
 <!-- <user-login></user-login> -->
 <!-- feel free to delete this button when ready -->
-<button (click)="navigate('new-user')">Navigate New User</button>
+<!-- <button (click)="navigate('new-user')">Navigate New User</button>
+<button (click)="navigate('returning-user')">Returning User Page</button>
 
 <div class="input-container" style="display: flex; flex-direction: column;">
     <input [(ngModel)]="currUserName" type="text" placeholder="Name">
-    <input type="currUserId" placeholder="Invite Code">
+    <input [(ngModel)]="currUserId" type="number" placeholder="Invite Code">
     <p>Current User name: {{ currUserName }}</p>
     <button (click)="onSubmit()">Submit</button>
-</div>
+</div> -->
 
 <!-- Here's the router outlet for displaying pages; this "router-outlet" component will be replaced with the routed page-->
+
+<div class="container">
+    <div class="home-nav">
+        <div class="logo">Where2Meet</div>
+        <div (click)="navigate('returning-user')" class="sign-in">Sign In</div>
+    </div>
+    <div id="SLIDE_BG"></div>
+    <div (click)="navigate('new-user')" class="sign-up">New User</div>
+    <div class="back-box"></div>
+    <h1 class="banner">Write Something</h1>
+</div>
+
+<!-- <new-user-page</new-user-page> -->
 <router-outlet></router-outlet>
