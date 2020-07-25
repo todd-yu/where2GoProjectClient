@@ -1,0 +1,110 @@
+
+.logo{
+    z-index: 9;
+    color: white;
+    position: absolute;
+    margin: auto;
+    left: 20px;
+    top: 10px;
+    font-size: 45px;
+}
+
+.sign-in{
+    z-index: 9;
+    color: black;
+    margin: auto;
+    position: absolute;
+    background-color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    right: 150px;
+    top: 12.5px;
+}
+
+.sign-in:hover{
+    background-image: linear-gradient(to bottom, #00a, #003);
+    color: white;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#SLIDE_BG{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    animation: slideBg 15s linear infinite 0s; 
+    animation-timing-function: ease-in-out;
+    background-image: url('../../img/coffee-1281880__480.webp');
+}
+
+@keyframes slideBg {
+    0%{
+        background-image: url('../../img/coffee-1281880__480.webp');
+    }
+    25%{
+        background-image: url('../../img/people-2557396__480.webp');
+    }
+    50%{
+        background-image: url('../../img/bg-img-1.webp');
+    }
+    75%{
+        background-image: url('../../img/audience-1867754__480.webp');
+    }
+    100%{
+        background-image: url('../../img/restaurant-690975__480.webp');
+    }
+}
+
+.sign-up{
+    position: relative;
+    font-family: sans-serif;
+    margin: auto;
+    width: 100px;
+    top: 550px;
+    padding: 20px 50px;
+    text-align: center;
+    color: #fff;
+    background-image: linear-gradient(to right, #003, #00a);
+    opacity: 90%;
+    z-index: 9;
+    border-radius: 30px;
+    box-shadow: 3px 3px rgba(0,0,0, 0.6);
+}
+
+.sign-up:hover {
+    background-image: linear-gradient(to right, #00a, #003);
+
+}
+
+.back-box{
+    z-index: 8;
+    background-image: linear-gradient(to bottom, rgba(3,3,3,0.1), rgba(3,3,3, 0.9));
+    margin: auto;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0px
+}
+
+.banner{
+    z-index: 9;
+    color: white;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 100px;
+    top: 240px;
+}

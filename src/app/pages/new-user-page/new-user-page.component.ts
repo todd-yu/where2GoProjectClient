@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-new-user-page',
+  selector: 'new-user-page',
   templateUrl: './new-user-page.component.html',
   styleUrls: ['./new-user-page.component.scss']
 })
