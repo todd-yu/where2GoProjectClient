@@ -17,6 +17,9 @@ import { InputsModule } from '@progress/kendo-angular-inputs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { PopupModule } from '@progress/kendo-angular-popup';
+import { JoinGroupComponent } from './components/join-group/join-group.component';
+import { CreateGroupComponent } from './components/create-group/create-group.component';
+import { ExistingGroupComponent } from './components/existing-group/existing-group.component';
 
 
 
@@ -40,6 +43,9 @@ const ROUTES: Routes = [
     ErrorPageComponent,
     NewUserPageComponent,
     LoginPageComponent,
+    JoinGroupComponent,
+    CreateGroupComponent,
+    ExistingGroupComponent,
   ],
   imports: [
     BrowserModule,
