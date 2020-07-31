@@ -1,0 +1,41 @@
+.join-btn{
+    padding: 30px;
+    background-image: linear-gradient(grey, black);
+    opacity: 0.6;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    animation-name: reverseBtnAnimation;
+    animation-duration: 0.5s;
+}
+
+.join-btn:hover{
+padding: 35px;
+animation-name: btnAnimation;
+animation-duration: 0.5s;
+}
+
+
+
+.join-container{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    background-color: darkgrey;
+    border-radius: 10px;
+    padding: 20px 0px
+}
+
+.invite-code{
+    color: white;
+    font-size: 30px;
+}
+
+.join-input{
+    border-radius: 5px;
+    padding: 5px 0px;
+}
+
+.submit{
+    padding: 5px;
+}

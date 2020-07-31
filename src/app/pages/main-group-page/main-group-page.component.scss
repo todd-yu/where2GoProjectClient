@@ -1,0 +1,88 @@
+
+
+.user-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -100px;
+}
+.nav-back{
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(grey, black);
+    opacity: 0.5;
+}
+
+.group-modify-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+}
+
+.mod{
+    padding: 30px;
+}
+
+.group-icon-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 0;
+}
+
+.group-icon-container{
+    padding: 60px;
+}
+
+.color-bar{
+    width: 100%;
+    height: 40px;
+    background-color: blue;
+    opacity: 0.75;
+    z-index: 9;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.group-icon{
+    padding: 60px 100px;
+    background-color: rgb(192, 192, 192, 0.75);
+    color: black;
+    font-size: 30px;
+    border-radius: 0px 0px 10px 10px;
+    animation-name: testReverse;
+    animation-duration: 0.5s;
+}
+
+.group-icon:hover{
+   animation-name: test;
+   animation-duration: 0.5s;
+   background-color: gray;
+   color: white;
+   padding: 65px 105px;
+}
+
+@keyframes test{
+    from {background-color: rgb(192, 192, 192, 0.75);}
+    to {background-color: gray;}
+    from {color: black;}
+    to {color: white;}
+    from{padding: 60px 100px;}
+    to{padding: 65px 105px;}
+}
+
+@keyframes testReverse{
+    from {background-color: gray;}
+    to {background-color: rgb(192, 192, 192, 0.75);}
+    from {color: white;}
+    to {color: black;}
+    from{padding: 65px 105px;}
+    to{padding: 60px 100px;}
+}
+
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}

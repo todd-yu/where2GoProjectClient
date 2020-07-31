@@ -1,4 +1,8 @@
-<button (click)="show = !show">Join new group</button>
+<button class="join-btn" (click)="show = !show">Join new group</button>
 <div *ngIf="show">
-   <p>Join Group in Development</p>
+   <div class="join-container">
+       <div class="invite-code">Invite code:  </div>
+       <input class="join-input"type="text" placeholder="Write Code Here">
+       <button class="submit">submit</button>
+   </div>
 </div> 

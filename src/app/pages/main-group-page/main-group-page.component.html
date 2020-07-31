@@ -1,4 +1,5 @@
 <div class="user-container">
+    <div class="nav-back"></div>
     <!-- <div *ngFor="let user of sampleData" class="user"> Name: {{ user.name }}
         <div *ngFor="let location of user.locationPreferences" class="locations"> 
             <div class="location">
@@ -7,7 +8,23 @@
             </div>
         </div>
     </div> -->
-   <join-group></join-group>
-   <create-group></create-group>
-    <existing-group></existing-group>
+   
+    <div class="group-modify-container">
+        <join-group class="mod"></join-group>
+        <create-group class="mod"></create-group>
+    </div>
+    <div class="line"></div>
+    <div class="group-icon-grid">
+        <div *ngFor="let group of groups">
+            <div class="group-icon-container">
+                <div class="color-bar"></div>
+                <div class="group-icon" (click)="show = !show"> {{group}} </div>
+                <div *ngIf="show" class="group-list">
+                    <existing-group></existing-group>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+    
