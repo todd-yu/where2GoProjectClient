@@ -1,0 +1,26 @@
+.create-btn{
+    padding: 30px;
+    background-image: linear-gradient(grey, black);
+    opacity: 0.6;
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+    animation-name: reverseBtnAnimation;
+    animation-duration: 0.5s;
+}
+
+.create-btn:hover{
+    padding: 35px;
+    animation-name: btnAnimation;
+    animation-duration: 0.5s;
+    }
+
+@keyframes btnAnimation{
+    from {padding: 30px;}
+    to{ padding: 35px;}
+}
+
+@keyframes reverseBtnAnimation{
+    from {padding: 35px;}
+    to {padding: 30px;}
+}

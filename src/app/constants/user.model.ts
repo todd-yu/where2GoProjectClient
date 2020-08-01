@@ -11,3 +11,7 @@ export class Location {
     address: string;
     
 }
+
+// export class Groups {
+//     groups: Array<any>;
+// }
