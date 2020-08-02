@@ -1,12 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 import {HomepageComponent} from "../../pages/homepage/homepage.component";
-import { Where2GoUser, Location, Where2GoGroup } from 'src/app/constants/user.model';
+import { Where2GoUser, Location } from 'src/app/constants/user.model';
 import { SampleUsers } from 'src/app/constants/sample-data';
 
-export class sampleConfig {
-  currGroup: Where2GoGroup;
-  currUser: Where2GoUser
-}
 @Component({
   selector: 'existing-group',
   templateUrl: './existing-group.component.html',

@@ -17,9 +17,7 @@
             <div class="user-location" >Location Preferences: </div>
             <input [(ngModel)]="locations" class="user-pref-loc" type="text" placeholder="need to figure out methodology">
         </div>
-        <div [routerLink]="['/returning-user']" routerLinkActive="router-link-active" class="submit-btn">Submit</div>
-        <div (click)="onConsoleLog()" class="submit-btn">Console Log</div>
-        <div (click)="BigChungus()" class="submit-btn">Big Chungus</div>
+        <div (click)="onSubmit()" [routerLink]="['/returning-user']" routerLinkActive="router-link-active" class="submit-btn">Submit</div>
     </div>
     <div class="parallax b"></div>
 </div>

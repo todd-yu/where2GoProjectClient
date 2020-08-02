@@ -11,4 +11,13 @@ export class GroupService {
   createGroup(name: string) {
     
   }
+
+  updateCurrentGroup(id: number) {
+    
+  }
+
+  getCurrentGroup() {
+
+  }
+  
 }

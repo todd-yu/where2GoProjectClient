@@ -1,20 +1,19 @@
 export class Where2GoUser {
     name: string;
-    id: string;
+    id: number;
     locationPreferences: Array<Location>;
     
-}
-
-export class Where2GoGroup {
-    users: Array<Where2GoUser>;
-    
+    constructor(name: string) {
+        this.name = name;
+        this.id = Date.now();
+    }
 }
 
 export class Location {
     name: string;
     coordinates: Array<number>;
     address: string;
-    
+    votes: number;
 }
 
 // export class Groups {

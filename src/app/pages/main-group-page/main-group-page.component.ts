@@ -53,7 +53,7 @@ export class MainGroupPageComponent implements OnInit {
   constructor(private bigChungus: UserService) { }
 
   ngOnInit(): void {
-    console.log(this.bigChungus.getUser());
+    console.log(this.bigChungus.getCurrentUser());
   }
   
 
