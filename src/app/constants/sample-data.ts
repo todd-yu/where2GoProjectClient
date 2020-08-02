@@ -1,9 +1,10 @@
 import { Where2GoUser } from './user.model';
 
-// export const Sampgroup = {
-//     groups: ["group1", "group2", "group3"]
 
-// } as unknown as Groups
+export const sampleGroup = {
+    groups: ["group1", "group2", "group3"]
+    
+}
 export const SampleUsers = {
     userArray: [
         {

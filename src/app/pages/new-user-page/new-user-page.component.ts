@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'new-user-page',
@@ -6,10 +7,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./new-user-page.component.scss']
 })
 export class NewUserPageComponent implements OnInit {
+  name: string = 'big Chungus';
+  locations: string ='wonderland';
 
-  constructor() { }
+  constructor(private _userService: UserService) { }
 
   ngOnInit(): void {
   }
 
+  onConsoleLog() {
+    console.log(this.name, this.locations);
+  }
+
+  BigChungus() {
+    this._userService.getUser();
+    this.name = 'big Chungus';
+    this.locations = 'wonderland';
+  }
 }

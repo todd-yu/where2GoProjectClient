@@ -11,13 +11,15 @@
     <div class="info-container">
         <div class="user-name-container">
             <div class="user-name">Name: </div>
-            <input class="user-name-input" type="text" placeholder="write name here">
+            <input [(ngModel)]="name" class="user-name-input" type="text" placeholder="Name">
         </div>
         <div class="user-location-container">
-            <div class="user-location">Location Preferences: </div>
-            <input class="user-pref-loc" type="text" placeholder="need to figure out methodology">
+            <div class="user-location" >Location Preferences: </div>
+            <input [(ngModel)]="locations" class="user-pref-loc" type="text" placeholder="need to figure out methodology">
         </div>
         <div [routerLink]="['/returning-user']" routerLinkActive="router-link-active" class="submit-btn">Submit</div>
+        <div (click)="onConsoleLog()" class="submit-btn">Console Log</div>
+        <div (click)="BigChungus()" class="submit-btn">Big Chungus</div>
     </div>
     <div class="parallax b"></div>
 </div>
