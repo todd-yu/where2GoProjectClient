@@ -5,6 +5,11 @@ export class Where2GoUser {
     
 }
 
+export class Where2GoGroup {
+    users: Array<Where2GoUser>;
+    
+}
+
 export class Location {
     name: string;
     coordinates: Array<number>;

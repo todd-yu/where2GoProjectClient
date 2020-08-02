@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { FormsModule } from "@angular/forms";
+import { HttpClientModule } from '@angular/common/http';
+
 import { ButtonModule } from '@progress/kendo-angular-buttons';
 
 import { AppComponent } from './app.component';
@@ -20,8 +22,8 @@ import { PopupModule } from '@progress/kendo-angular-popup';
 import { JoinGroupComponent } from './components/join-group/join-group.component';
 import { CreateGroupComponent } from './components/create-group/create-group.component';
 import { ExistingGroupComponent } from './components/existing-group/existing-group.component';
-
-
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { DemoPageComponent } from './pages/demo-page/demo-page.component';
 
 
 const ROUTES: Routes = [
@@ -29,6 +31,7 @@ const ROUTES: Routes = [
     { path: 'new-user', component: NewUserPageComponent },
     { path: 'returning-user', component: MainGroupPageComponent },
     { path: 'login', component: LoginPageComponent},
+    { path: 'demo', component: DemoPageComponent},
     { path: '', redirectTo: 'home', pathMatch: 'full'},
     { path: '**', component: ErrorPageComponent }
 ];
@@ -46,6 +49,7 @@ const ROUTES: Routes = [
     JoinGroupComponent,
     CreateGroupComponent,
     ExistingGroupComponent,
+    DemoPageComponent
   ],
   imports: [
     BrowserModule,
@@ -55,7 +59,9 @@ const ROUTES: Routes = [
     InputsModule,
     BrowserAnimationsModule,
     PopupModule,
-    ButtonModule
+    ButtonModule,
+    NgbModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
