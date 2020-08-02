@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from 'src/app/services/user.service';
+import { Where2GoUser } from 'src/app/constants/user.model';
 
 @Component({
   selector: 'new-user-page',
@@ -15,13 +16,19 @@ export class NewUserPageComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onConsoleLog() {
-    console.log(this.name, this.locations);
+  createNewUser(name: string) {
+    let newUser = new Where2GoUser(name);
+    this._userService.createUser(newUser);
+    let url = this._generateUrl(newUser.id);
+    return url;
   }
 
-  BigChungus() {
-    this._userService.getUser();
-    this.name = 'big Chungus';
-    this.locations = 'wonderland';
+  private _generateUrl(id: number): string {
+    return 'https://where2go.com/existing-group/' + id.toString();
+  }
+
+  onSubmit() {
+    let user = new Where2GoUser(this.name);
+    this._userService.createUser(user);
   }
 }
